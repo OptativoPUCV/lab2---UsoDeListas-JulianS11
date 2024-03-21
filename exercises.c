@@ -58,8 +58,11 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
   int suma = 0;
-  largo = get_size(L);
-  return 0;
+  talla = get_size(L);
+  for(int i = 0; i < talla; i++){
+    suma += L[i];
+  }
+  return suma;
 }
 
 /*

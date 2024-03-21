@@ -23,3 +23,20 @@ exercises.c:60:7: error: unused variable ‘suma’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 0823942
+Thu 21 Mar 2024 08:49:03 PM UTC: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:61:3: error: ‘talla’ undeclared (first use in this function)
+   61 |   talla = get_size(L);
+      |   ^~~~~
+exercises.c:61:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:63:14: error: invalid use of undefined type ‘struct List’
+   63 |     suma += L[i];
+      |              ^
+exercises.c:63:13: error: invalid use of incomplete typedef ‘List’
+   63 |     suma += L[i];
+      |             ^
+Compilation failed
+b87ae63

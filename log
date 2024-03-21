@@ -40,3 +40,16 @@ exercises.c:63:13: error: invalid use of incomplete typedef ‘List’
       |             ^
 Compilation failed
 b87ae63
+Thu 21 Mar 2024 08:49:10 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:63:14: error: invalid use of undefined type ‘struct List’
+   63 |     suma += L[i];
+      |              ^
+exercises.c:63:13: error: invalid use of incomplete typedef ‘List’
+   63 |     suma += L[i];
+      |             ^
+Compilation failed
+0774c9c

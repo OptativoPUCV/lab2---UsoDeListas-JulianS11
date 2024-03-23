@@ -734,3 +734,18 @@ stack.h:23:5: error: implicit declaration of function ‘clearList’ [-Werror=i
 cc1: all warnings being treated as errors
 Compilation failed
 73552e7
+Sat 23 Mar 2024 08:12:39 PM UTC: 
+ exercises.c | 30 +++++++++++++++---------------
+ 1 file changed, 15 insertions(+), 15 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:129:9: error: implicit declaration of function ‘free_stack’; did you mean ‘create_stack’? [-Werror=implicit-function-declaration]
+  129 |         free_stack(pila);
+      |         ^~~~~~~~~~
+      |         create_stack
+exercises.c:137:20: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  137 |   int result = pila->size == 0 ? 1 : 0;
+      |                    ^~
+cc1: all warnings being treated as errors
+Compilation failed
+8027e40

@@ -7,7 +7,7 @@
 #include "stack.h"
 #include "stack.h"
 
-//#include "exercises.h"
+#include "exercises.h"
 
 //Funciones auxiliares que puedes utilizar para debuggear tus ejercicios
 //NO MODIFICAR
@@ -136,11 +136,9 @@ int parentesisBalanceados(char *cadena) {
   }
   
   if(top(pila) == NULL){
-    #include "stack.h"
     free_stack(pila);
     return 1;
   } else {
-    #include "stack.h"
     free_stack(pila);
     return 0;
   }

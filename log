@@ -403,3 +403,13 @@ exercises.c:140:5: error: implicit declaration of function ‘free_stack’; did
 cc1: all warnings being treated as errors
 Compilation failed
 3b77202
+Sat 23 Mar 2024 07:34:44 PM UTC: 
+ exercises.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c:10:10: fatal error: exercises.h: No such file or directory
+   10 | #include "exercises.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+Compilation failed
+28f027f

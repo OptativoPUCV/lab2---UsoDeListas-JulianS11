@@ -703,3 +703,22 @@ arraylist.c:37:6: error: ‘pushFront’ defined but not used [-Werror=unused-fu
 cc1: all warnings being treated as errors
 Compilation failed
 be2855d
+Sat 23 Mar 2024 08:09:31 PM UTC: 
+ exercises.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+In file included from exercises.c:1,
+                 from test.c:5:
+stack.h: In function ‘free_stack’:
+stack.h:23:5: error: implicit declaration of function ‘clearList’ [-Werror=implicit-function-declaration]
+   23 |     clearList(stack);
+      |     ^~~~~~~~~
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:127:19: error: ‘Pila’ undeclared (first use in this function); did you mean ‘pila’?
+  127 |       if(get_size(Pila) == 0){
+      |                   ^~~~
+      |                   pila
+exercises.c:127:19: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+3b40536

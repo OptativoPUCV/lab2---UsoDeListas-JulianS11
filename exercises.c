@@ -126,6 +126,7 @@ int parentesisBalanceados(char *cadena) {
     }
     else if(cadena[i] == ')'){
       if(top(pila) == NULL){
+        free_stack(pila);
         return 0;
       }
       pop(pila);
@@ -133,11 +134,10 @@ int parentesisBalanceados(char *cadena) {
     i++;
   }
   
-  if(top(pila) == NULL){
-    return 1;
-  } else {
-    return 0;
-  }
+  int resultado = pila->size == 0 ? 1 : 0;
 
+  free_stack(pila);
+
+  return resultado;
 }
 

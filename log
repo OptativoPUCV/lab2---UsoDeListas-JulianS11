@@ -464,3 +464,20 @@ Sat 23 Mar 2024 07:37:30 PM UTC:
  tests:  7|1
 total_score: 60/70
 fc062df
+Sat 23 Mar 2024 08:02:41 PM UTC: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from exercises.c:1,
+                 from test.c:5:
+stack.h: In function ‘free_stack’:
+stack.h:21:5: error: implicit declaration of function ‘clear’ [-Werror=implicit-function-declaration]
+   21 |     clear(stack);
+      |     ^~~~~
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:137:23: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  137 |   int resultado = pila->size == 0 ? 1 : 0;
+      |                       ^~
+cc1: all warnings being treated as errors
+Compilation failed
+35788af

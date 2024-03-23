@@ -136,9 +136,11 @@ int parentesisBalanceados(char *cadena) {
   }
   
   if(top(pila) == NULL){
+    #include "stack.h"
     free_stack(pila);
     return 1;
   } else {
+    #include "stack.h"
     free_stack(pila);
     return 0;
   }

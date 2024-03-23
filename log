@@ -391,3 +391,15 @@ exercises.c:139:5: error: implicit declaration of function ‘free_stack’; did
 cc1: all warnings being treated as errors
 Compilation failed
 c855f47
+Sat 23 Mar 2024 07:34:31 PM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:140:5: error: implicit declaration of function ‘free_stack’; did you mean ‘create_stack’? [-Werror=implicit-function-declaration]
+  140 |     free_stack(pila);
+      |     ^~~~~~~~~~
+      |     create_stack
+cc1: all warnings being treated as errors
+Compilation failed
+3b77202

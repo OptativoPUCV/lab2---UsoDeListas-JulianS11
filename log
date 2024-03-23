@@ -413,3 +413,15 @@ exercises.c:10:10: fatal error: exercises.h: No such file or directory
 compilation terminated.
 Compilation failed
 28f027f
+Sat 23 Mar 2024 07:34:54 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:139:5: error: implicit declaration of function ‘free_stack’; did you mean ‘create_stack’? [-Werror=implicit-function-declaration]
+  139 |     free_stack(pila);
+      |     ^~~~~~~~~~
+      |     create_stack
+cc1: all warnings being treated as errors
+Compilation failed
+48fca74

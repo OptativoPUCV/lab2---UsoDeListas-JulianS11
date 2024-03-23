@@ -135,12 +135,12 @@ int parentesisBalanceados(char *cadena) {
     }
 
   if (pila->size == 0) {
-    return 1; // Retorna 1 si los paréntesis están balanceados
+    return 1;
   } else {
     if (top(pila) != NULL) {
-      return 0; // Retorna 0 si falta un paréntesis de cierre
+      return 0; 
     } else {
-      return 1; // Retorna 1 si hay paréntesis abiertos sin cerrar
+      return 1;
     }
   
 

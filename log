@@ -437,3 +437,18 @@ exercises.c:139:5: error: implicit declaration of function ‘free_stack’; did
 cc1: all warnings being treated as errors
 Compilation failed
 3fc234c
+Sat 23 Mar 2024 07:35:58 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c:10:19: error: extra tokens at end of #include directive [-Werror]
+   10 | #include "stack.h"#include "stack.h"
+      |                   ^
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:141:5: error: implicit declaration of function ‘free_stack’; did you mean ‘create_stack’? [-Werror=implicit-function-declaration]
+  141 |     free_stack(pila);
+      |     ^~~~~~~~~~
+      |     create_stack
+cc1: all warnings being treated as errors
+Compilation failed
+793f192

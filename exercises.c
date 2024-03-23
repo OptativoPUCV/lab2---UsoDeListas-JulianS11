@@ -5,9 +5,6 @@
 #include <math.h>
 #include <ctype.h>
 #include "arraylist.h"
-#include "stack.h"
-#include "stack.h"
-#include "stack.h"
 
 //#include "exercises.h"
 
@@ -118,7 +115,6 @@ La función verifica si la cadena de entrada tiene sus
 paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
-#include "stack.h"
 
 int parentesisBalanceados(char *cadena) {
   Stack* pila = create_stack();
